@@ -17,12 +17,12 @@ class MovieTableSeeder extends Seeder
     {
         $movies = [
             [
-                'name' => 'The Shawshank Redemption',
-                'slug' => 'the-shawshank-redemption',
-                'category' => 'Drama',
+                'name' => 'The Godfather: Part II',
+                'slug' => 'the-godfather-part-ii',
+                'category' => 'Crime',
                 'rating' => 4.5,
-                'video_url' => 'https://www.youtube.com/embed/6hB3S9bIaco',
-                'thumbnail' => 'https://i.ytimg.com/vi/6hB3S9bIaco/maxresdefault.jpg',
+                'video_url' => 'https://www.youtube.com/embed/qJr_1IuJUcM',
+                'thumbnail' => 'https://i.ytimg.com/vi/qJr_1IuJUcM/maxresdefault.jpg',
                 'is_featured' => true,
             ],
             [
