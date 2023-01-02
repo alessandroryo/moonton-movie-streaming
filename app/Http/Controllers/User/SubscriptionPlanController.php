@@ -21,15 +21,6 @@ class SubscriptionPlanController extends Controller
 
     public function userSubscribe(Request $request, SubscriptionPlan $subscriptionPlan)
     {
-        // [
-        //     'user_id',
-        //     'subscription_plan_id',
-        //     'price',
-        //     'expired_date',
-        //     'payment_status',
-        //     'snapToken'
-        // ];
-
         $data = [
             'user_id' => auth()->user()->id,
             'subscription_plan_id' => $subscriptionPlan->id,

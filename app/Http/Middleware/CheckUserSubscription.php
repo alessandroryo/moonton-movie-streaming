@@ -20,7 +20,7 @@ class CheckUserSubscription
         if (!Auth::user()->isActive && $status == 'true') {
             return redirect()->route('user.dashboard.subscriptionPlan.index');
         }
-        if (!Auth::user()->isActive && $status == 'false') {
+        if (Auth::user()->isActive && $status == 'false') {
             return redirect()->route('user.dashboard.index');
         }
 
