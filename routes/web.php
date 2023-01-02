@@ -19,6 +19,9 @@ use App\Http\Controllers\Admin\MovieController as AdminMovieController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// MIDTRANS ROUTE
+Route::post('/midtrans/notification', [SubscriptionPlanController::class, 'midtransCallback'])->name('midtrans.notification');
+
 Route::redirect('/', '/login');
 
 Route::middleware(['auth', 'role:user'])->prefix('dashboard')->name('user.dashboard.')->group(function () {
