@@ -65,6 +65,9 @@ class HandleInertiaRequests extends Middleware
                 'message' => Session::get('message'),
                 'type' => Session::get('type'),
             ],
+            'env' => [
+                'MIDRANS_CLIENT_KEY' => env('MIDTRANS_CLIENT_KEY'),
+            ],
             'ziggy' => function () use ($request) {
                 return array_merge((new Ziggy)->toArray(), [
                     'location' => $request->url(),
