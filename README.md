@@ -12,3 +12,4 @@ The Laravel framework provides Moonton with a number of tools and features that 
 - **[Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze)**
 - **[Inertia](https://inertiajs.com/)**
 - **[React](https://reactjs.org/)**
+- **[Tailwind CSS](https://tailwindcss.com/)**
